@@ -1,0 +1,70 @@
+#root {
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+@keyframes animStar {
+  from {
+      transform: translateY(0px);
+  }
+
+  to {
+      transform: translateY(-2000px);
+  }
+}
+
+.auroral-stars {
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+pointer-events: none;
+z-index: -1;
+}
+
+.star {
+position: absolute;
+width: 2px;
+height: 2px;
+border-radius: 50%;
+background: rgba(255, 254, 254, 0.7);
+pointer-events: none;
+animation: blinkStars linear infinite;
+
+
+}
+
+@keyframes blinkStars {
+0%, 100% {
+opacity: 1;
+}
+50% {
+opacity: 0.5;
+}
+}
+
+
+
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
