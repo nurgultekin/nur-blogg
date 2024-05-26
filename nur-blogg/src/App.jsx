@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Navbar from "./comp/Navbar";
-import Hero from "./pages/Hero";
+import Home from "./pages/Home";
 import Explore from "./pages/Explore";
 import MakeBlogg from "./pages/MakeBlogg";
 import LoginForm from "./comp/LoginForm";
@@ -68,11 +68,11 @@ function App() {
               exact
               path="/"
               element={
-                <Hero
+                <Home
                   blogPosts={blogPosts}
                   removeBlog={removeBlog}
                   addComment={addComment}
-                  editBlog={editBlog} // Pass editBlog function as prop
+                  editBlog={editBlog} 
                 />
               }
             />
@@ -83,7 +83,6 @@ function App() {
                   blogPosts={blogPosts}
                   removeBlog={removeBlog}
                   addComment={addComment}
-                  editBlog={editBlog} // Pass editBlog function as prop
                 />
               }
             />
